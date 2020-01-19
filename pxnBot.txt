@@ -1,0 +1,8 @@
+Bot Access token: NzBhNTI2MzUtMGU3MC00OTU3LWIzODEtOTc4OGM3ODIzYzJhNTJmZjlkMjMtYjMx_PF84_consumer
+
+Bot ID: Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL2Y1NjczYjBjLThiN2QtNDYyMS1hYzkzLTNiMWIxZWE3NWMxZA
+
+Bot Name: powerXnotifications
+
+Bot Username: powerxnotifications@webex.bot
+
