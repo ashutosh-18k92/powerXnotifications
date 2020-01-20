@@ -1,0 +1,6 @@
+homepage https://github.com/ashutosh-18k92/powerXnotifications.git
+
+$ minishhift config set-startup-checks false
+$ minishift start
+$ minishift addon install --defaults
+$ minishift addon apply registry-route
