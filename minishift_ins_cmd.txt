@@ -2,5 +2,11 @@ homepage https://github.com/ashutosh-18k92/powerXnotifications.git
 
 $ minishhift config set-startup-checks false
 $ minishift start
+	or
+$ minishift start --vm-driver virtualbox
 $ minishift addon install --defaults
 $ minishift addon apply registry-route
+
+============login using oc client=================
+
+$ oc login --insecure-skip-tls-verify=true  https://192.168.99.103:8443
