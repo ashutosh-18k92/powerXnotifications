@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/svc")
 public class EmailDispatcher {
-    @RequestMapping("/broadcast")
+    @RequestMapping("/dispatch")
     public String dispatch(){
         return "your package has been dispatched";
     }

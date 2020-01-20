@@ -1,12 +1,45 @@
 homepage https://github.com/ashutosh-18k92/powerXnotifications.git
 
-$ minishhift config set-startup-checks false
+# MANAGING LIFECYCLE OF MINISHIFT
+------------------------------------------------
 $ minishift start
+$ minishhift config set startup-checks false
 	or
 $ minishift start --vm-driver virtualbox
 $ minishift addon install --defaults
 $ minishift addon apply registry-route
 
-============login using oc client=================
+# LOGIN USING OC CLIENT
+-------------------------------------------------
 
 $ oc login --insecure-skip-tls-verify=true  https://192.168.99.103:8443
+
+
+# CONFIGURE MINISHIFT FOR OPTIMAL USE
+------------------------------------------------
+$ minishift config view
+
+$ minishfit config view --global
+
+$ minishift config set memory 4096
+	or
+$ minishift config set --global memory 4096
+
+$ minishift config unset  //resets all the configuration
+
+$ minishift config unset memory //resets memory config
+
+:: insecure registry ::
+
+$ minishift start --insecure-registry hub.foo.com
+
+# NETWORKING
+---------------------------------------------------
+$ minishift ip
+
+$ minishift ssh
+
+
+
+
+
