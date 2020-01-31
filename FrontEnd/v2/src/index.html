@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<!--===============================================================================================-->
+</head>
+<body ng-app="">
+
+	<div class="bg-contact2" style="background-image: url('images/cloud.jpg'); max-width: 100%; height: auto;">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						Registration
+					</span>
+
+					<div class="wrap-input2 validate-input" >
+						<input class="input2" id="admin" type="text" name="adminId"placeholder="Admin ID" style="color: #666666;" required>
+						
+					</div>
+
+					<div class="wrap-input2 validate-input">
+						<input class="input2" id="group" type="text" name="groupname" placeholder="Group Name" style="color: #666666;" required>
+						
+					</div>
+
+					<div class="wrap-input2 validate-input">
+						<input class="input2" id="password" type="password" name="password" 
+						 placeholder="Enter a password     Ex:@The234jjK" style="color: #666666; " required >
+						 
+					</div>
+					
+						
+					
+					
+					<div class="wrap-input2confirm validate-input">
+						
+						
+						<input class="input2" id="confirmPassword" type="password" name="confirmPassword" 
+						data-toggle="modal" data-target="#myModal"  placeholder="Confirm Password" style="color: #666666; z-index: 1;" required>
+						 
+						
+					</div>
+					
+					<span id="message"></span>
+					<br>
+					<br>
+					
+					
+
+					<div class="wrap-checkbox validate-input">
+						<span class="focus-input2" data-placeholder="Mode of Communication"></span><br>	
+						<input class="checkboxes" type="checkbox"id="email" name="mode1" value="email"> Email <br><br> 
+						<input class="checkboxes" id="webex"  type="checkbox" name="mode2" value="webex" ng-model="room"> Webex &nbsp
+						<input type="text" name="name" id="roomId" ng-show="room" placeholder="Please enter the room ID" style="color: #666666;">	
+						<br>	
+					</div>
+
+					<div class="wrap-recipients validate-input" data-validate = "Add your recipients">
+						<span class="focus-input2" data-placeholder="Add Recipients"></span><br>	
+						<input type="text" id = "recipientName" name="recipients" placeholder="Enter recipient's name">
+						<button id = "addButton" type="button" style="color: #666666;">Add</button>	
+					</div>
+				
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button type="submit" id="mySubmit"class="contact2-form-btn"  style="background-color: black; "
+							> 
+							Create &nbsp; Your &nbsp; Group
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title">Password Rules</h4>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body"> 
+				&bull; The password should contain atleast characters<br>
+				&bull; Password should contain alphanumeric characters with    captial letters<br>
+				&bull; Password should contain atleast one special charcters<br>
+
+			</div>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	<!-- onclick="window.location.href = 'https://w3docs.com';"  -->
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
